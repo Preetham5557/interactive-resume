@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shashi Preetham Goud Palle - Interactive Resume</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header id="main-header">
+    <h1>Shashi Preetham Goud Palle</h1>
+    <p>Machine Learning & Data Science Enthusiast</p>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Achievements</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p id="greeting"></p>
+    <p>
+      I am a <strong>passionate technologist</strong> exploring the intersection of
+      <mark><abbr title="Machine Learning">ML</abbr></mark>,
+      <mark>Data Mining</mark>, and
+      <mark>Web Development</mark>. With experience building a
+      <em>genomics-based Alzheimer's detection model</em> and developing a
+      <em>text generator using Flask</em>, I thrive in solving complex real-world problems.
+    </p>
+  </section>
+
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <div class="job-entry">
+      <h3>Associate Digital Marketing</h3>
+      <p><strong>Duration:</strong> 6 months</p>
+      <ol>
+        <li>Ran digital ad campaigns and SEO optimizations</li>
+        <li>Wrote web content and blogs</li>
+        <li>Managed HubSpot-based web pages</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <button id="sort-gpa">Sort by GPA</button>
+    <table>
+      <thead>
+        <tr>
+          <th>Degree</th>
+          <th>Institution</th>
+          <th>Graduation</th>
+          <th>GPA</th>
+          <th>Achievements</th>
+        </tr>
+      </thead>
+      <tbody id="education-body">
+        <tr>
+          <td>Master's in Computer and Information Sciences</td>
+          <td><img src="liu-logo.png" alt="LIU" class="logo"> Long Island University, Brooklyn</td>
+          <td>2025 (Expected)</td>
+          <td>3.6</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Bachelor's in Computer Science</td>
+          <td><img src="jntuh-logo.png" alt="JNTUH" class="logo"> JNTU Hyderabad</td>
+          <td>2021</td>
+          <td>3.7</td>
+          <td>Regional Math Talent Hunt Winner</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div id="skill-toggle">
+      <button data-level="beginner">Beginner</button>
+      <button data-level="intermediate">Intermediate</button>
+      <button data-level="advanced">Advanced</button>
+    </div>
+
+    <div class="skill-group" data-level="beginner">
+      <fieldset>
+        <legend>Beginner</legend>
+        <label>React Native <progress value="40" max="100"></progress></label>
+      </fieldset>
+    </div>
+
+    <div class="skill-group" data-level="intermediate">
+      <fieldset>
+        <legend>Intermediate</legend>
+        <label>Python <progress value="75" max="100"></progress></label>
+        <label>Data Mining <progress value="70" max="100"></progress></label>
+        <label>SEO / Ads <progress value="65" max="100"></progress></label>
+      </fieldset>
+    </div>
+
+    <div class="skill-group" data-level="advanced">
+      <fieldset>
+        <legend>Advanced</legend>
+        <label>Machine Learning <progress value="90" max="100"></progress></label>
+        <label>Flask <progress value="85" max="100"></progress></label>
+      </fieldset>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Alzheimer's Detection</h3>
+            <p>ML model using genomics data</p>
+          </div>
+          <div class="card-back">
+            <dl>
+              <dt>Tech</dt><dd>Python, Scikit-learn</dd>
+              <dt>Demo</dt><dd><a href="#">View</a></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Text Generator</h3>
+            <p>Built with Flask backend</p>
+          </div>
+          <div class="card-back">
+            <dl>
+              <dt>Tech</dt><dd>Flask, NLP</dd>
+              <dt>Demo</dt><dd><a href="#">View</a></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications & Achievements</h2>
+    <dl>
+      <dt><span class="badge">Math Talent Hunt Winner</span></dt>
+      <dd>Won the regional-level mathematics talent hunt during undergraduate.</dd>
+    </dl>
+  </section>
+
+  <section id="hobbies">
+    <h2>Hobbies & Interests</h2>
+    <figure>
+      <img src="poetry.jpg" alt="Poetry">
+      <figcaption>Writing Poems & Stories</figcaption>
+    </figure>
+    <figure>
+      <img src="news.jpg" alt="Geopolitical News">
+      <figcaption>Geopolitical News</figcaption>
+    </figure>
+  </section>
+
+  <footer>
+    <p>Let’s Connect!</p>
+    <button id="back-to-top">↑</button>
+  </footer>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
